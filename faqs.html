@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Huy Tran">
+    <meta name="description" content="Made for PSET8 of CS50x course">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <span class="fs-4">CS50x</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/cs50x.html" class="nav-link">CS50x Course</a></li>
+                    <li class="nav-item"><a href="/cs50x-psets.html" class="nav-link">Problem Sets</a></li>
+                    <li class="nav-item"><a href="/#" class="nav-link active" aria-current="page">FAQs</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h2>Assessments</h2>
+                <div class="accordion accordion-flush" id="assessments">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="assessments-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#assessment_q1" aria-expanded="false" aria-controls="assessment_q1">
+                                Does CS50x have a test or quiz?
+                            </button>
+                        </h2>
+                        <div id="assessment_q1" class="accordion-collapse collapse" aria-labelledby="assessments-header" data-bs-parent="#assessments">
+                            <div class="accordion-body">
+                                Nope! CS50 at Harvard does have a test and quiz, but CS50x does not.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="assessments-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#assessment_q2" aria-expanded="false" aria-controls="assessment_q2">
+                                If I submitted a problem and did not reach the 70% passing grade, can I resubmit?
+                            </button>
+                        </h2>
+                        <div id="assessment_q2" class="accordion-collapse collapse" aria-labelledby="assessments-header" data-bs-parent="#assessments">
+                            <div class="accordion-body">
+                                Yes! You may resubmit; we will only count your most recent submission towards your progress. See the Grades section below for more details.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Certificates</h2>
+                <div class="accordion accordion-flush" id="certificates">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="certificates-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certificate_q1" aria-expanded="false" aria-controls="certificate_q1">
+                                Do I have to pay for verification before starting the course?
+                            </button>
+                        </h2>
+                        <div id="certificate_q1" class="accordion-collapse collapse" aria-labelledby="certificates-header" data-bs-parent="#certificates">
+                            <div class="accordion-body">
+                                Nope! If you would like a verified certificate from edX, you can pay for verification at any point, even after completing all of the coursework. 
+                                Though we do recommend, to avoid any logistical issues that can delay certificate issuance, that you verify before finishing the course. 
+                                Otherwise, the 30-day wait we reference below only starts once you have had your identity verified by edX.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="certificates-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certificate_q2" aria-expanded="false" aria-controls="certificate_q2">
+                                How do I get my free CS50 Certificate?
+                            </button>
+                        </h2>
+                        <div id="certificate_q2" class="accordion-collapse collapse" aria-labelledby="certificates-header" data-bs-parent="#certificates">
+                            <div class="accordion-body">
+                                Once you have completed the course and met all of the requirements, you’ll see a link on your CS50x Gradebook page allowing you to request a free CS50 Certificate, much like the one shown here. 
+                                This link will be available within approximately four hours, and you should then proceed to log in using your GitHub credentials. 
+                                If you have trouble accessing it, try logging out of GitHub and back in, then revisit the link to download your certificate. Be sure to request your certificate before 1 January 2024.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Deadlines</h2>
+                <div class="accordion accordion-flush" id="deadlines">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="deadlines-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deadlines_q1" aria-expanded="false" aria-controls="deadlines_q1">
+                                If I don’t finish the course before 31 December 2023, what will happen?
+                            </button>
+                        </h2>
+                        <div id="deadlines_q1" class="accordion-collapse collapse" aria-labelledby="deadlines-header" data-bs-parent="#deadlines">
+                            <div class="accordion-body">
+                                On 1 January 2024, the course will be updated to a 2024 version. Your progress from 2023 will be carried forward to the 2024 version (see below). After 31 December 2023, you may only submit the 2024 version’s problem sets and will need to satisfy whatever requirements are in place for CS50x 2024. Your carryover progress (as described below) from 2022 or prior will not carry forward into 2024, however.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="deadlines-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#deadlines_q2" aria-expanded="false" aria-controls="deadlines_q2">
+                                If I started CS50x before 2023, can I resume?
+                            </button>
+                        </h2>
+                        <div id="deadlines_q2" class="accordion-collapse collapse" aria-labelledby="deadlines-header" data-bs-parent="#deadlines">
+                            <div class="accordion-body">
+                                Yes, any progress you made on past years’ problem sets has been carried forward to your CS50x 2023 gradebook. Note that individual problem results from past years are not shown, but if the corresponding problem set and lab was completed, you’ll see it marked with a green circle and included in your progress bar at the top. Moving forward, though, you must submit CS50x 2023’s problem sets and labs. Work from prior versions of the course may not be submitted for credit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-end">
+            <span class="text-muted">Connect with me <a href="https://github.com/huytnd" class="text-primary"><i class="bi bi-github"></i></a> and <a href="https://twitter.com/mdo" class="text-primary"><i class="bi bi-linkedin"></i></a></span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
